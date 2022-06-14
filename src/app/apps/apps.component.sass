@@ -1,12 +1,12 @@
 .apps
     background: white
+    padding: 2.5em 9.5em 0em 9.5em 
+    @media screen and (max-width: 769px)
+        padding: 0.5em 2.5em 0.5em 2.5em
+    @media screen and (max-width: 450px)
+        padding: 0.5em 1em 0.5em 1em
     .head
         display: flex 
-        padding: 2.5em 9.5em 1.5em 9.5em 
-        @media screen and (max-width: 769px)
-            padding: 0.5em 2.5em 0.5em 2.5em
-        @media screen and (max-width: 450px)
-            padding: 0.5em 1em 0.5em 1em
         .title
             font-family: 'Noto Kufi Arabic', sans-serif   
             font-size: 28px 
@@ -23,6 +23,7 @@
                 width: 1.2em
                 display: flex 
                 right: 5.5em 
+                margin: 4px auto 0em auto
                 @media screen and (max-width: 769px)
                     right: 2.5rem
                     width: 9% 
@@ -35,9 +36,7 @@
         flex-wrap: wrap
         margin: auto
         img
-            width: 80%
-            @media screen and (max-width: 1024px)
-                width: 100%
+            width: 100%
             border-radius: 11px
         .card
             max-width: 38.5rem
@@ -52,9 +51,10 @@
             color: #FFF
             &:last-child
                 direction: rtl
-                padding: 0 0 0 6rem
+                padding: 2.5em 0 0 5rem
+                margin-left: auto
                 @media screen and (max-width: 1024px)
-                    padding: 0 0 0 0rem
+                    padding: 2em 0 0 0rem
 
         .card-title
             font-size: 26px 
