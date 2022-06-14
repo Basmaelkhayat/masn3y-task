@@ -62,27 +62,12 @@
     text-align: center
     position: relative
     margin: 0 auto
-
-    ul
-        border: 0.15rem solid black
-        list-style-type: none
-        margin: 0 auto
-        padding-left: 0
-        text-align: right
-        width: 100%
-        position: absolute
-        background: white
-
-    li
-        display: inline-block
-
     a
         display: block
         min-width: 140px
         text-align: center
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
         color: black
-        text-transform: normal
         background: white
         text-decoration: none
         margin-left: -5px
@@ -97,67 +82,5 @@
         a
         color: rgba(0, 0, 0, 0.5)
         background-color: lightgray
-
-        ul a
-        background: white
-        color: black
-        height: 40px
-        line-height: 40px
-
-        .mobile-menu ul a:hover
-        color: lightgray
-
-    ul
-        display: none
-
-        li
-        display: block
-        float: none
-
-        a
-            width: auto
-            min-width: 100px
-            padding: 0 20px
-
-    .show-menu
-        text-decoration: none
-        color: black
-        background: white
-        text-align: center
-        padding: 10px 15px
-        display: none
-        cursor: pointer
-        text-transform: normal
-
-    span
-        padding-left: 2em
-        text-align: right
-
-    input[type="checkbox"]
-        display: none
-    &:checked ~ #menu
-        display: block
-    
-@media screen and (max-width: 767px)
-.mobile-menu
-    .lines
-        border-bottom: 15px double black
-        border-top: 5px solid black
-        content: ""
-        height: 5px
-        width: 20px
-        padding-right: 15px
-        float: right
-
-    ul
-        position: static
-        display: none
-
-    li
-        margin-bottom: 0
-
-    ul li, li a
-        width: 100%
-
     .show-menu
         display: block
