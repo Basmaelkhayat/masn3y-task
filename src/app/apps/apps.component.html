@@ -1,0 +1,86 @@
+<section class="apps">
+  <div class="head">
+    <span class="title"> تطبيقات مصنعي</span>
+  </div>
+  <div class="wrapper">
+    <div class="card">
+      <img
+        [src]="
+          changeSlide == false
+            ? '../../assets/images/dashboard.jpeg'
+            : '../../assets/images/dashboard2.png'
+        "
+      />
+    </div>
+    <div class="card">
+      <div class="card-title">
+        <img src="../../assets/images/modern-tv-apple.png" />
+
+        {{
+          changeSlide == false
+            ? "لوحة التحكم التفاعلية"
+            : "لوحة التحكم التفاعلية الثانيه"
+        }}
+      </div>
+      <span class="card-content">
+        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+        القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
+        التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ
+        طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا
+        يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.
+      </span>
+      <div class="store">
+        <div class="app-store">
+          <div class="text">
+            <span class="available"> متاح علي منصة </span>
+            <br />
+            <span class="download"> تحميل لأجهزة أبل </span>
+          </div>
+          <div class="icon">
+            <img src="../../assets/images/apple-icon.png" />
+          </div>
+        </div>
+        <div class="app-store">
+          <div class="text">
+            <span class="available"> متاح علي منصة </span>
+            <br />
+            <span class="download"> تحميل لأجهزة أندرويد </span>
+          </div>
+          <div class="icon">
+            <img src="../../assets/images/android.png" />
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+        <a
+          class="arrow-right"
+          (click)="change()"
+          [ngClass]="changeSlide == false ? 'disabled' : ''"
+        >
+          <img
+            [src]="
+              changeSlide == true
+                ? '../../assets/images/arrow-left-blue.png'
+                : '../../assets/images/icon-stroke-24-arrow-digram-left.png'
+            "
+            alt=""
+          />
+        </a>
+        <a
+          class="arrow-left"
+          (click)="change()"
+          [ngClass]="changeSlide == true ? 'disabled' : ''"
+        >
+          <img
+            [src]="
+              changeSlide == false
+                ? '../../assets/images/arrow-left-blue.png'
+                : '../../assets/images/icon-stroke-24-arrow-digram-left.png'
+            "
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

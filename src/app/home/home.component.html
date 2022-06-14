@@ -1,0 +1,140 @@
+<section class="navigation">
+  <div class="nav-container flex-container">
+    <div class="setting-login">
+      <!-- png -->
+      <img src="../../assets/images/microphone.png" class="microphone" />
+      <div class="rectangle"></div>
+      <div class="login-rect">
+        <a>
+          تسجيل الدخول
+          <img src="../../assets/images/user.png" class="user" />
+        </a>
+      </div>
+      <a class="user-smallS">
+        <img src="../../assets/images/user.png" class="user" />
+      </a>
+    </div>
+    <nav>
+      <div class="nav-mobile" (click)="toggleNavigation()">
+        <a id="nav-toggle"><span></span></a>
+      </div>
+      <div [ngClass]="{ open: showResponsivenavbar }">
+        <ul
+          [ngClass]="
+            showResponsivenavbar == false
+              ? 'nav-list'
+              : 'navbar-nav sub-menu text-light bg-custom-light p-3'
+          "
+        >
+          <li class="brand">
+            <a href="#!">
+              <img src="../../assets/images/logo-black-white.png" />
+            </a>
+          </li>
+          <li>
+            <a routerLink="/home">الرئيسية</a>
+          </li>
+          <li>
+            <a routerLink="/about">عن مصنعي</a>
+          </li>
+          <li>
+            <a>
+              <select class="form-control">
+                <option selected="selected">
+                  <a routerLink="/web-design" href="#!">خدمات مصنعي</a>
+                </option>
+                <option>
+                  <a routerLink="/web-design" href="#!">option 1</a>
+                </option>
+                <option>
+                  <a routerLink="/web-design2" href="#!">option 2</a>
+                </option>
+                <option>
+                  <a routerLink="/web-design" href="#!">option 3</a>
+                </option>
+                <option>
+                  <a routerLink="/web-design2" href="#!">option 4</a>
+                </option>
+              </select>
+            </a>
+          </li>
+          <li>
+            <a>
+              <select class="form-control">
+                <option selected="selected">
+                  <a routerLink="/web-design" href="#!">الاستعلامات</a>
+                </option>
+                <option>
+                  <a routerLink="/web-design" href="#!">option 1</a>
+                </option>
+                <option>
+                  <a routerLink="/web-design2" href="#!">option 2</a>
+                </option>
+                <option>
+                  <a routerLink="/web-design" href="#!">option 3</a>
+                </option>
+                <option>
+                  <a routerLink="/web-design2" href="#!">option 4</a>
+                </option>
+              </select>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/about" href="#!">دليل الماكينات</a>
+          </li>
+          <li>
+            <a routerLink="/contact" href="#!">جديد مصنعي</a>
+          </li>
+        </ul>
+        <div class="navbar-nav close" (click)="toggleNavigation()">
+          <img src="../../assets/images/close-icon.png" />
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="heading">
+    <span class="\-"> سعياً للارتقاء بجودة مصنعك<br />و تطوير معداتك </span>
+  </div>
+  <div class="mask">
+    <span class="\-">
+      تطوير مصنعي ليكون البوابة الأولي الداعمة للمجتمع الصناعي<br />
+      بالتعاون مع مختصين الصناعات
+    </span>
+  </div>
+  <div class="search">
+    <div class="Rectangle-10-Copy">
+      <img
+        src="../../assets/images/icon-stroke-24-arrow-digram-left.png"
+        class="search-alternate"
+      />
+    </div>
+    <input id="search" type="text" placeholder="بحث مثال: تطوير ماكينات …" />
+    <a class="search-btn" href="#">
+      <img
+        src="../../assets/images/search-alternate.png"
+        class="search-alternate"
+      />
+    </a>
+  </div>
+  <div class="slogan">
+    <div class="Line"></div>
+    <span class="text"> أو انتقل للخدمات الاكثر استخداما </span>
+    <div class="Line"></div>
+  </div>
+  <div class="container">
+    <main class="grid">
+      <div class="text">
+        <img src="../../assets/images/group-5.png" class="search-alternate" />
+        <span>حجز مواعيد إلكترونية</span>
+      </div>
+      <div class="text">
+        <img src="../../assets/images/group-4.png" class="search-alternate" />
+        <span>نقل المعدات</span>
+      </div>
+      <div class="text">
+        <img src="../../assets/images/group-3.png" class="search-alternate" />
+        <span>المعاملات المالية</span>
+      </div>
+    </main>
+  </div>
+</section>

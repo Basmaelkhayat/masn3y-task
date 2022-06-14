@@ -1,0 +1,50 @@
+.service
+    background: #f6f6f6
+    .head
+        display: flex 
+        padding: 2.5em 9.5em 1.5em 9.5em 
+        @media screen and (max-width: 769px)
+            padding: 0.5em 2.5em 0.5em 2.5em
+        @media screen and (max-width: 450px)
+            padding: 0.5em 1em 0.5em 1em
+        .title
+            font-family: 'Noto Kufi Arabic', sans-serif   
+            font-size: 28px 
+            font-weight: 900 
+            line-height: 1.5 
+            color: #262626 
+            margin-inline-start: auto
+            &::after
+                transition: 300ms 
+                height: 4px 
+                content: "" 
+                position: absolute 
+                background-color: #4cc9f0 
+                width: 1.2em
+                display: flex 
+                right: 5.5em 
+                @media screen and (max-width: 769px)
+                    right: 2.5rem
+                    width: 9% 
+                @media screen and (max-width: 450px)
+                    right: 1rem
+                    width: 9% 
+        .more
+            margin: auto 0 
+            padding: 4px 9px 
+            border-radius: 6px 
+            background-color: #4361ee 
+            cursor: pointer 
+            color: white 
+            font-size: 15px 
+            direction: rtl
+            a
+                display: flex
+                align-items: center
+                .user
+                    width: 20px 
+                    height: 20px 
+                    padding: 0px 14px 0px 0px
+            &:hover
+                opacity: 0.7 
+                cursor: pointer 

@@ -1,0 +1,122 @@
+.apps
+    background: white
+    .head
+        display: flex 
+        padding: 2.5em 9.5em 1.5em 9.5em 
+        @media screen and (max-width: 769px)
+            padding: 0.5em 2.5em 0.5em 2.5em
+        @media screen and (max-width: 450px)
+            padding: 0.5em 1em 0.5em 1em
+        .title
+            font-family: 'Noto Kufi Arabic', sans-serif   
+            font-size: 28px 
+            font-weight: 900 
+            line-height: 1.5 
+            color: #262626 
+            margin-inline-start: auto
+            &::after
+                transition: 300ms 
+                height: 4px 
+                content: "" 
+                position: absolute 
+                background-color: #4cc9f0 
+                width: 1.2em
+                display: flex 
+                right: 5.5em 
+                @media screen and (max-width: 769px)
+                    right: 2.5rem
+                    width: 9% 
+                @media screen and (max-width: 450px)
+                    right: 1rem
+                    width: 9% 
+    .wrapper
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        margin: auto
+        img
+            width: 80%
+            @media screen and (max-width: 1024px)
+                width: 100%
+            border-radius: 11px
+        .card
+            max-width: 38.5rem
+            @media screen and (max-width: 991px)
+                max-width: 29.5rem
+            @media screen and (max-width: 769px)
+                max-width: 26.5rem
+            @media screen and (max-width: 450px)
+                max-width: 300px
+            min-height: 250px
+            box-sizing: border-box
+            color: #FFF
+            &:last-child
+                direction: rtl
+                padding: 0 0 0 6rem
+                @media screen and (max-width: 1024px)
+                    padding: 0 0 0 0rem
+
+        .card-title
+            font-size: 26px 
+            font-weight: 900 
+            line-height: 2 
+            text-align: right 
+            color: #4361ee 
+            display: flex
+            img
+                width: 23px 
+                height: 23px 
+                margin: auto 3px auto 10px 
+                object-fit: contain 
+        .card-content
+            font-size: 12px 
+            line-height: 1.71 
+            text-align: right 
+            color: #737373 
+        .store 
+            display: flex
+            @media screen and (max-width: 450px)
+                display: block
+            .app-store
+                margin: 2em 0 36px 16px 
+                padding: 8px 16px 9px 20px 
+                border-radius: 6px 
+                background-color: #f2f2f2 
+                display: flex 
+                cursor: pointer
+                .text 
+                    line-height: 1
+                    width: max-content
+                    .available
+                        font-size: 12px 
+                        line-height: 1.33 
+                        text-align: right 
+                        color: #737373 
+                    .download
+                        font-weight: bold 
+                        line-height: 1.5
+                        font-size: 14px
+                        color: #737373 
+                &:hover
+                    opacity:  0.74 
+                .icon
+                    margin-right: auto 
+                    display: flex 
+                    img
+                        width: 18px 
+                        height: 24px 
+                        margin: 8px 40px 7px 0 
+                        object-fit: contain 
+
+        .arrows
+            a
+                cursor: pointer
+                img
+                    width: 1em
+            .arrow-right
+                img
+                    transform: rotate(180deg)
+            .arrow-left
+                padding: 1em
+    .disabled
+        pointer-events: none
