@@ -1,7 +1,7 @@
 .platforms
     background-color: #5f79f1
     margin: auto 
-    padding: 3em 0
+    padding: 3em 0 2em 0
     border-radius: 6px
     margin: 2.5em 9.5em 1.5em 9.5em 
     @media screen and (max-width: 769px)
@@ -16,7 +16,7 @@
         text-align: center 
         color: #fff 
     .info
-        margin: 1em auto
+        margin: 1em auto 3em auto
         font-size: 14px 
         line-height: 1.71 
         text-align: center 
@@ -24,25 +24,72 @@
         width: 40%
         @media screen and (max-width: 991px)
             width: 100%
-    .wrapper
+
+    .card
+        box-sizing: border-box 
+        color: #FFF 
+        margin: 0 
+        background-color: #3952ca 
+        display: grid 
+        padding: 2em 
+        border-radius: 8px 
+        width: fit-content 
+        height: inherit
+        .img-rect
+            padding: 18px 
+            border-radius: 8px 
+            background-color: #fff 
+            margin: auto 
+            display: flex 
+            margin-bottom: 1em
+            img
+                width: 52px 
+                height: 48px 
+                object-fit: contain 
+    .card-title
+        font-size: 22px 
+        font-weight: bold 
+        font-stretch: normal 
+        font-style: normal 
+        line-height: 1.64 
+        letter-spacing: normal 
+        text-align: center 
+        color: #fff         
+    .card-content
+        font-size: 15px 
+        font-weight: normal 
+        font-stretch: normal 
+        font-style: normal 
+        line-height: 1.5 
+        letter-spacing: normal 
+        text-align: center 
+        color: #d0d8fb 
+        height: 5em
+    .card-btn
+        font-size: 14px 
+        font-weight: bold 
+        font-stretch: normal 
+        font-style: normal 
+        line-height: normal 
+        letter-spacing: normal 
+        text-align: right 
+        color: #fff 
         display: flex
-        justify-content: center
-        flex-wrap: wrap
+        margin: 1em auto
+        direction: rtl
+        img
+            width: 1.5em 
+            margin: auto 2em 
 
-        .card
-            max-width: 300px
-            min-height: 250px
-            padding: 30px
-            box-sizing: border-box
-            color: #FFF
-            margin: 20px
-        .card-title
-            margin-top: 0
-            font-size: 16px
-            font-weight: 600
-            letter-spacing: 1.2px
-
-        .card-content
-            font-size: 14px
-            letter-spacing: 0.5px
-            line-height: 1.5
+    .arrows
+        margin: 2em auto auto auto
+        text-align-last: center
+        a
+            cursor: pointer
+            img
+                width: 1em
+        .arrow-left
+            img
+                transform: rotate(180deg)
+        .arrow-right
+            padding: 1em

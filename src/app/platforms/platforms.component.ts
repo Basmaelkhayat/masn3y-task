@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-platforms',
@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlatformsComponent implements OnInit {
   constructor() {}
-
+  changeSlide: boolean = false;
+  @ViewChild('myCarousel', { static: false }) myCarousel: any;
   ngOnInit(): void {}
+
+  next() {
+    this.myCarousel.next();
+    this.changeSlide = true;
+  }
+  previous() {
+    this.myCarousel.prev();
+    this.changeSlide = false;
+  }
 }

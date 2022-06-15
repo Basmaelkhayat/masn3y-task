@@ -11,6 +11,7 @@ import { PlatformsComponent } from './platforms/platforms.component';
 import { AppsComponent } from './apps/apps.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, IvyCarouselModule],
   providers: [],
   bootstrap: [AppComponent],
 })
